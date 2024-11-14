@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Varieties</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgb(115, 28, 28);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.menu-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    background-color: rgb(69, 52, 52);
+}
+
+.menu-item img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.menu-details h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: rgb(239, 159, 55);
+}
+
+.menu-details p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #07020a;
+}
+
+footer {
+    background-color: rgb(115, 28, 28);
+    color: white;
+    text-align: center;
+    padding: 10px ;
+    margin-top: 2%;
+    width: 100%;
+}
+
+footer,p {
+    font-size: 14px;
+}
+.ch{
+    color: brown;
+}
+.or:hover{
+    background-color: brown;
+    border: solid;
+    border-radius: 10px;  
+    color: black;
+}
+.or{
+    color: brown;
+}
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Chocolate Varieties</h1>
+        </div>
+    </header>
+
+    <section class="menu">
+
+        <div class="menu-item">
+            <img src="darkch.webp" alt="Dark Chocolate">
+            <div class="menu-details">
+                <h3>Dark <span class="ch">Chocolate</span></h3>
+                <p>A rich, intense chocolate with a cocoa content of 70%, perfect for dark chocolate lovers.</p>
+                <span class="price">Rs.60</span><br><br>
+                <span class="or">ORDER</span>
+            </div>
+        </div>
+        
+        <div class="menu-item">
+            <img src="milkch.jpeg" alt="Milk Chocolate">
+            <div class="menu-details">
+                <h3>Milk <span class="ch">Chocolate</span></h3>
+                <p>A smooth and creamy milk chocolate with a perfect blend of cocoa and sweetness.</p>
+                <span class="price">Rs.50</span><br><br>
+                <span class="or">ORDER</span>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="whitech.jpeg" alt="White Chocolate">
+            <div class="menu-details">
+                <h3>White <span class="ch">Chocolate</span></h3>
+                <p>Sweet and creamy white chocolate made from cocoa butter, perfect for those who love a milder taste.</p>
+                <span class="price">Rs.50</span><br><br>
+                <span class="or">ORDER</span>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="hazch.webp" alt="Hazelnut Chocolate">
+            <div class="menu-details">
+                <h3>Hazelnut <span class="ch">Chocolate</span></h3>
+                <p>A delightful combination of creamy chocolate and crunchy hazelnuts. A nutty indulgence!</p>
+                <span class="price">Rs.50</span><br><br>
+                <span class="or">ORDER</span>
+            </div>
+        </div>
+        
+        <div class="menu-item">
+            <img src="caramelch.jpeg" alt="Caramel Chocolate">
+            <div class="menu-details">
+                <h3>Caramel <span class="ch">Chocolate</span></h3>
+                <p>A decadent treat with the perfect mix of sweet caramel and smooth chocolate.</p>
+                <span class="price">Rs.70</span><br><br>
+                <span class="or">ORDER</span>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="mintch.jpeg" alt="Mint Chocolate">
+            <div class="menu-details">
+                <h3>Mint <span class="ch">Chocolate</span></h3>
+                <p> Cocoa mass, sugar, cocoa butter, mint essence, lecithin (emulsifier), vanilla.</p>
+                <span class="price">Rs.50</span><br><br>
+                <span class="or">ORDER</span>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="almondch.jpeg" alt="Almond Chocolate">
+            <div class="menu-details">
+                <h3>Almond <span class="ch">Chocolate</span></h3>
+                <p> Cocoa mass, sugar, milk powder, almonds, cocoa butter, lecithin (emulsifier), vanilla.</p>
+                <span class="price">Rs.80</span><br><br>
+                <span class="or">ORDER</span>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="orangech.jpeg" alt="Orange Chocolate">
+            <div class="menu-details">
+                <h3>Orange <span class="ch">Chocolate</span></h3>
+                <p> Cocoa mass, sugar, cocoa butter, orange zest, lecithin (emulsifier), vanilla.</p>
+                <span class="price">Rs.50</span><br><br>
+                <span class="or">ORDER</span>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="strawch.jpg" alt="Strawberry Chocolate">
+            <div class="menu-details">
+                <h3>Strawberry <span class="ch">Chocolate</span></h3>
+                <p> Cocoa mass, sugar, strawberry extract, milk powder, cocoa butter, lecithin (emulsifier), vanilla.</p>
+                <span class="price">Rs.70</span><br><br>
+                <span class="or">ORDER</span>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="espressoch.jpg" alt="Espresso Chocolate">
+            <div class="menu-details">
+                <h3>Espresso <span class="ch">Chocolate</span></h3>
+                <p> Cocoa mass, sugar, espresso, cocoa butter, lecithin (emulsifier), vanilla.</p>
+                <span class="price">Rs.60</span><br><br>
+                <span class="or">ORDER</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Chocolate Delights </p>
+        </div>
+    </footer>
+
+</body>
+</html>

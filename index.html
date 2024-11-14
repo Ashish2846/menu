@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Card</title>
+    <style>
+       * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.menu-categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 40px 0;
+    text-align: center;
+    margin-left: 8%;
+    margin-right: 5%;
+    margin-top: 10%;
+}
+
+.category {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.category:hover {
+    transform: scale(1.05);
+    background-color: #7dc3f1;
+}
+
+.category img {
+    width: 100%;
+    max-width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.category h2 {
+    font-size: 1.8rem;
+    color: #2980b9;
+}
+
+.category a {
+    text-decoration: none;
+    color: #2980b9;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+a:hover{
+    background-color: #92c6ea;
+    color: rgb(132, 106, 234);
+    border:solid #92c6ea ;
+    border-radius: 10px;
+}
+
+.category p {
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 10%;
+}
+
+footer,p {
+    font-size: 1rem;
+}
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Welcome to Our Menu</h1>
+            <p>Your favorite fast food, ice creams, chocolates and cold drinks all in one place!</p>
+        </div>
+    </header>
+
+    <section class="menu-categories">
+        <div class="category">
+            <img src="fastfood.jpeg" alt="Fast Food">
+            <h2><a href="snack.html">fast food</a></h2>
+            <p>Explore delicious fast food options.</p>
+        </div>
+
+        <div class="category">
+            <img src="varich.jpeg" alt="Chocolate ">
+            <h2><a href="pro.html">Chocolate </a></h2>
+            <p>Indulge in rich chocolate.</p>
+        </div>
+
+        <div class="category">
+            <img src="icecream.jpeg" alt=" Ice Cream">
+            <h2><a href="ice.html">Ice Cream</a></h2>
+            <p>Indulge in creamy ice creams.</p>
+        </div>
+
+        <div class="category">
+            <img src="drink.jpeg" alt="Cold Drinks">
+            <h2><a href="drink.html">Cold Drinks</a></h2>
+            <p>Refresh yourself with our cool and tasty drinks.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Menu Card </p>
+        </div>
+    </footer>
+
+</body>
+</html>
